@@ -1,0 +1,55 @@
+<html>
+<head><title>page1</title>
+<style>
+body {
+background-image: url("page1.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+background-color:#AFEEEE;
+height:650;
+}
+#l{margin-top:5%;margin-left:3%%;}
+#r{margin-top:5%;margin-left:1%;}
+input{
+padding:15px;
+border-width:5px;
+border-color:white;
+color:white;
+background-color:black;
+}
+h1
+{
+text-align:center;
+color: 	black;
+font-size:55;
+}
+h2
+{
+text-align:center;
+color: 	red;
+font-size:30;
+}
+font{margin-top:5%;
+margin-left:30%;
+font-weight:bold;
+color:yellow; font-size:20;	}
+#k{color:yellow;}
+</style>
+</head>
+<body>
+<h1>WELCOME TO ZEOTECH CONVERTER</h1>
+<h2>A FINE PLACE TO CONVERT YOUR IMAGE FILES TO TEXT FILES</h2>
+<center><img src="2.jpg"></center>
+<font>Click Login</font>
+<input type="button" id="l" value="LOGIN" onclick="login()">
+
+<b id="k">(OR)</b>
+<input type="button" id="r" value="REGISTER" onclick="register()">
+<script>
+function login(){window.location.href="login.html";}
+function register(){window.location.href="register.html";}
+</script>
+</body>
+
+</html>

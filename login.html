@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+body {
+background-image: url("page1.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+height:650;
+}
+
+h1
+{
+text-align:center;
+color: 	black;
+font-size:60;
+}
+.c{margin-top:20px;}
+
+.a{margin-top:80px;
+font-size:18;font-weight:bold;
+text-align:center;}
+.b{text-align:center;}
+#e{
+padding:15px;
+border-width:5px;
+border-color:white;
+color:white;
+background-color:black;
+clear:both;
+margin-top:20px;
+}#uname{border-width:3px;
+padding:4px;
+}
+#password{border-width:3px;
+padding:4px;
+}
+</style>
+<title>LOGIN</title>
+</head>
+<body>
+<h1>Login Here</h1>
+<div class="a">
+USERNAME: <INPUT TYPE="text" id='uname'  placeholder="Enter your user name" required><br><br>
+PASSWORD: <INPUT TYPE="password" id="password" placeholder="Enter your password" required><br>
+<input type="button" id="e" value="LOGIN" onclick="check()">
+<input type="button" id="e" value="CANCEL" onclick="cancel()"></div>
+<script>
+function cancel()
+{
+window.location.href="page1.html";
+}
+function check()
+{
+ var name1 = document.getElementById("uname").value;
+var name2="1jpranesh@gmail.com";
+var pass1=document.getElementById("password").value;
+var pass2="zeo";
+var count=0;
+if(name1==name2)
+{count++;}
+if(pass1==pass2)
+{count++;}
+if(count==2)
+{
+window.location.href = "upload.html";
+}
+else{alert("OOPSS ! ! ! Enter a valid username or password");}
+}
+</script>
+</body>
+</html>
