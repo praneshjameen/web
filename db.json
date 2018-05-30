@@ -1,16 +1,20 @@
-{
-   "data":[{
+{"data":[{
    "id":"1",
-   "type":"user",
+   "type":"tag",
    "attributes":{
-      "name":"Anfanie Farmeo"
-   }
-   },
+      "name":"tag1"
+   }},
    {
-      "id":"2",
-      "type":"PaymentMethodPaypal",
-      "attributes":{
-         "linked-email":"ryan@gosling.io",
-      }
-} ]
-               }
+   "id":"2",
+   "type":"tag",
+   "attributes":{
+      "name":"tag2"
+   }},
+   {
+   "id":"3",
+   "type":"tag",
+   "attributes":{
+      "name":"tag3"
+   }}
+]
+}
